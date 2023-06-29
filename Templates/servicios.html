@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interfaz con 8 Cards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .card {
+            width: 300px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: box-shadow 0.3s;
+        }
+        
+        .card img {
+            width: 250px;
+            height: 250px;
+            border-radius: 15%;
+            margin-bottom: 10px;
+        }
+        
+        .card h3 {
+            color: #333;
+        }
+        
+        .card p {
+            color: #777;
+            margin: 10px 0;
+        }
+        
+        .card button {
+            background-color: #03a791;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .card:hover {
+            box-shadow: 0 4px 8px rgba(3, 3, 3, 0.2);
+        }
+        
+        .card button:hover {
+            background-color: #00ffdd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2019/05/14/17/07/web-development-4202909_1280.png" alt="Programación Web">
+            <h3>Desarrollo Web</h3>
+            <p>Diseñamos tu propias página web bajo tus necesidades mediante HTML, CSS, 
+                JavaScrip en el lenguaje que mas acomode.
+            Nos podemos adaptar al Framework que sea de tu agrado.</p>
+            <button>Ver más</button>
+        </div>
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2016/12/09/18/30/database-schema-1895779_1280.png" alt="Base de Datos">
+            <h3>Base de Datos</h3>
+            <p>Ofrecemos soporte para alguna consulta, diagrama Entidad-Relación,
+                modificación en tu Base de datos.
+                Hasta la creación de una nueva Base de Datos, Bajo el lenguaje SQL. 
+            </p>
+    
+            <button>Ver más</button>
+        </div>
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2017/10/14/17/57/computer-2851285_1280.png" alt="Office">
+            <h3>Asistencia Remota</h3>
+            <p>Si requieres de alguna actualización urgente o estás atorado en alguna tarea
+                nosotros podemos guiarte para la solución de tu problema conectados remotamente 
+                sin necesidad de alguna reunión.
+            </p>
+            <button>Ver más</button>
+        </div>
+        <div class="card">
+            <img src="C:\Users\LENOVO\OneDrive\Documentos\GitHub\ProyectoIntegradorWeb\static\computer-2851285_640.png" alt="Soporte Técnico">
+            <h3>Soporte Técnico</h3>
+            <p>Adquiere conocimientos de Hardwere, Software y se capaz de realizar matenimientos 
+                preventivos, reparaciones, instalaciones, entre otros servicios que puedas ofrecer 
+                a clientes. 
+            </p>
+            <button>Ver más</button>
+        </div>
+        <div class="card">
+            <img src="C:\Users\LENOVO\OneDrive\Documentos\GitHub\ProyectoIntegradorWeb\Imagenes\connections-2099068_640.png" alt="Redes">
+            <h3>Redes</h3>
+            <p>Aprende los conceptos y equipos básicos de Redes, realiza tus propias topologías, 
+                subneteos y haz tus propias configuraciones dependiendo el ambiente en 
+                el que te encuentres. 
+            </p>
+            <button>Ver más</button>
+        </div>
+        <div class="card">
+            <img src="C:\Users\LENOVO\OneDrive\Documentos\GitHub\ProyectoIntegradorWeb\Imagenes\flat-2126884_640.png" alt="Aspel">
+            <h3>Aspel</h3>
+            <p>Conoce el proceso de Facturación, así mismo de las aplicaciones que te pueden
+                facilitar procesos.
+            </p>
+            <p>Aprende el uso de SAE, COI, NOI, CAJA Y BANCO</p>
+            <button>Ver más</button>
+        </div>
+        <div class="card">
+            <img src="ruta-a-la-imagen-7.jpg" alt="Imagen 7">
+            <h3>Python</h3>
+            <p>Inicia desde cero hasta nivel avanzado, teniendo conocimientos suficientes para 
+                desarrollos de Inteligencia Artificial, Backend, entre otras funciones. 
+                
+            </p>
+            <button>Ver más</button>
+        </div>
+        <div class="card">
+            <img src="ruta-a-la-imagen-8.jpg" alt="Imagen 8">
+            <h3>Card 8</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button>Ver más</button>
+        </div>
+    </div>
+</body>
+</html>
