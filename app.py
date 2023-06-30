@@ -15,9 +15,9 @@ def servicos():
 def historia():
     return render_template ('historia.html')
 
-@app.route("/mantenimiento")
+@app.route("/soporte")
 def mantenimiento():
-    return render_template('mantenimiento.html')
+    return render_template('soporte.html')
 
 if __name__ == '__main__':
     app.run()
