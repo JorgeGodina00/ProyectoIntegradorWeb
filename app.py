@@ -11,9 +11,13 @@ def principal():
 def servicos():
     return render_template ('servicios.html')
 
+@app.route("/historia")
+def historia():
+    return render_template ('historia.html')
+
 @app.route("/mantenimiento")
 def mantenimiento():
-    return render_template('servicio.html')
+    return render_template('mantenimiento.html')
 
 if __name__ == '__main__':
     app.run()

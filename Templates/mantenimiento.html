@@ -93,7 +93,6 @@
         }
         
         .footer {
-            background-color: #7A7A7A;
             padding: 20px;
             text-align: center;
             margin-top: auto;
@@ -114,35 +113,53 @@
 </head>
 <body>
     <div class="header">
-        <div class="menu">Inicio</div>
-        <div class="menu">Servicios</div>
-        <div class="menu">Contacto</div>
-        <div class="menu">Acerca de Nosotros</div>
+        <a href="../templates/index.html" class="menu">Inicio</a>
+        <a href="../templates/servicios.html" class="menu">Servicios</a>
+        <a href="https://api.whatsapp.com/send?phone=4423159281" class="menu">Contacto</a>
+        <a href="/ruta_acerca" class="menu">Acerca de Nosotros</a>
     </div>
     <div class="content">
         <div class="left-section">
             <div class="image-container">
-                <img src="https://cdn.pixabay.com/photo/2021/10/11/13/12/website-6700615_1280.png" alt="Imagen">
+                <img src="../static/soporte.jpg" alt="Imagen">
             </div>
             <div class="description">
-                <p>Nuestro equipo de técnicos altamente capacitados se encargará de realizar un análisis exhaustivo de su computadora, identificando posibles problemas y brindando soluciones efectivas. Durante el servicio de mantenimiento, llevaremos a cabo las siguientes tareas:
-                    <br>Limpieza interna: Eliminaremos el polvo y los residuos acumulados en los componentes internos de su computadora, incluyendo ventiladores, disipadores de calor y conectores. Esto ayudará a prevenir el sobrecalentamiento y mejorar el flujo de aire, evitando posibles daños en el hardware.</br>
+                <h1>Mantenimiento a Equipos</h1>
+                <p>Nuestro equipo de técnicos altamente capacitados se encargará de realizar un análisis 
+                    exhaustivo de su computadora, identificando posibles problemas y brindando soluciones 
+                    efectivas. Durante el servicio de mantenimiento, llevaremos a cabo las siguientes tareas:
+                    <br>-Limpieza interna: Eliminaremos el polvo y los residuos acumulados en los componentes 
+                    internos de su computadora, incluyendo ventiladores, disipadores de calor y conectores. 
+                    Esto ayudará a prevenir el sobrecalentamiento y mejorar el flujo de aire, evitando 
+                    posibles daños en el hardware.</br>
                     
-                    <br>Actualización de software: Verificaremos que su sistema operativo y sus programas estén actualizados con las últimas versiones y parches de seguridad. Esto mejorará el rendimiento general de su computadora y garantizará la protección contra amenazas cibernéticas.</br>
+                    <br>-Actualización de software: Verificaremos que su sistema operativo y sus programas 
+                    estén actualizados con las últimas versiones y parches de seguridad. Esto mejorará el 
+                    rendimiento general de su computadora y garantizará la protección contra amenazas 
+                    cibernéticas.</br>
                     
-                    <br>Optimización del sistema: Realizaremos ajustes y configuraciones en su sistema operativo para optimizar su rendimiento. Esto incluye la desfragmentación del disco duro, la eliminación de archivos temporales y la optimización de la memoria RAM.</br>
+                    <br>-Optimización del sistema: Realizaremos ajustes y configuraciones en su sistema operativo 
+                    para optimizar su rendimiento. Esto incluye la desfragmentación del disco duro, la eliminación 
+                    de archivos temporales y la optimización de la memoria RAM.</br>
                     
-                    <br>Verificación de hardware: Realizaremos pruebas exhaustivas en los componentes de hardware de su computadora, como la memoria RAM, el disco duro y la tarjeta gráfica. Esto nos permitirá detectar posibles fallas o problemas de compatibilidad y tomar medidas correctivas.</br>
+                    <br>-Verificación de hardware: Realizaremos pruebas exhaustivas en los componentes de hardware 
+                    de su computadora, como la memoria RAM, el disco duro y la tarjeta gráfica. Esto nos permitirá
+                     detectar posibles fallas o problemas de compatibilidad y tomar medidas correctivas.</br>
                     
-                    <br>Respaldo de datos: Recomendamos realizar copias de seguridad regulares de sus datos importantes. En caso de que ocurra algún problema grave en su computadora, podremos restaurar sus archivos y configuraciones previas.</br>
+                    <br>-Respaldo de datos: Recomendamos realizar copias de seguridad regulares de sus datos 
+                    importantes. En caso de que ocurra algún problema grave en su computadora, podremos restaurar 
+                    sus archivos y configuraciones previas.</br>
                     
-                    Nuestro objetivo principal es asegurarnos de que su computadora funcione de manera eficiente, confiable y segura. Con nuestro servicio de mantenimiento, prolongará la vida útil de su equipo, evitará costosas reparaciones y disfrutará de un rendimiento óptimo en sus tareas diarias.</p>
+                    Nuestro objetivo principal es asegurarnos de que su computadora funcione de manera eficiente, 
+                    confiable y segura. Con nuestro servicio de mantenimiento, prolongará la vida útil de su 
+                    equipo, evitará costosas reparaciones y disfrutará de un rendimiento óptimo en sus tareas 
+                    diarias.</p>
             </div>
         </div>
         <div class="right-section">
             <form class="form" action="/ruta_destino" method="POST">
-                <h2 class="form-title">Comunicate con Nosotros</h2>
-                <p class="form-description">Llena los siguientes espacios y nos podremos en contacto contigo.</p>
+                <h2 class="form-title">Comunícate con Nosotros</h2>
+                <p class="form-description">Llena los siguientes espacios y nos pondremos en contacto contigo.</p>
                 <input type="text" name="nombre" placeholder="Nombre" class="form-input" required>
                 <input type="text" name="apellido1" placeholder="Apellido 1" class="form-input" required>
                 <input type="text" name="apellido2" placeholder="Apellido 2" class="form-input" required>
@@ -152,12 +169,10 @@
             </form>
         </div>
     </div>
-    <div class="footer">
-        <div class="social-icons">
-            <a href="https://link_red_social_1"><img src="https://cdn.pixabay.com/photo/2017/06/22/06/22/facebook-2429746_1280.png" alt="Facebook"></a>
-            <a href="https://link_red_social_2"><img src="https://cdn.pixabay.com/photo/2016/12/04/18/58/instagram-1882330_1280.png" alt="Instagram"></a>
-            <a href="https://link_red_social_3"><img src="https://cdn.pixabay.com/photo/2015/03/10/17/23/youtube-667451_1280.png" alt="Youtube"></a>
-        </div>
-    </div>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/roman.ferrusquia"><img src="../static/logo1.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/roman_ferrusquia/"><img src="../static/logo2.png" alt="Instagram"></a>
+        <a href="https://www.youtube.com/@MarkitosTOYS"><img src="../static/logo3.png" alt="Youtube"></a>
+    </div> 
 </body>
 </html>
