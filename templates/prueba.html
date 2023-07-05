@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Soporte Técnico</title>
+    <style>
+        body {
+            background-color: #F7F7F7;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .header {
+            background-color: #2E2E2E;
+            padding: 10px;
+            color: #FFFFFF;
+            text-align: right;
+        }
+        
+        .menu {
+            display: inline-block;
+            margin-right: 20px;
+            cursor: pointer;
+            padding: 10px 20px;
+        }
+        
+        .menu:hover {
+            background-color: #4F4F4F;
+        }
+        
+        .content {
+            display: flex;
+            flex-direction: row;
+            padding: 20px;
+        }
+        
+        .left-section {
+            flex: 1;
+            background-color: #EEEEEE;
+            padding: 20px;
+        }
+        
+        .image-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .image-container img {
+            max-width: 100%;
+        }
+        
+        .description {
+            background-color: #D1D1D1;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .right-section {
+            flex: 1;
+            padding: 20px;
+        }
+        
+        .form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #F2F2F2;
+            padding: 20px;
+        }
+        
+        .form-title {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        
+        .form-description {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .form-input {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+        
+        .form-button {
+            width: 100%;
+            background-color: #4F4F4F;
+            color: #FFFFFF;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .footer {
+            padding: 20px;
+            text-align: center;
+            margin-top: auto;
+        }
+        
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        
+        .social-icons img {
+            margin: 0 10px;
+            height: 30px;
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="../templates/index.html" class="menu">Inicio</a>
+        <a href="../templates/servicios.html" class="menu">Servicios</a>
+        <a href="https://api.whatsapp.com/send?phone=4423159281" class="menu">Contacto</a>
+        <a href="/ruta_acerca" class="menu">Acerca de Nosotros</a>
+    </div>
+    <div class="content">
+        <div class="left-section">
+            <div class="image-container">
+                <img src="../static/soporte.jpg" alt="Imagen">
+            </div>
+            <div class="description">
+                <h1>Soporte Técnico</h1>
+                <p>Nuestro equipo de técnicos altamente capacitados se encargará de realizar un análisis 
+                    exhaustivo de su computadora, identificando posibles problemas y brindando soluciones 
+                    efectivas. Durante el servicio de mantenimiento, llevaremos a cabo las siguientes tareas:
+                    <br>-Limpieza interna: Eliminaremos el polvo y los residuos acumulados en los componentes 
+                    internos de su computadora, incluyendo ventiladores, disipadores de calor y conectores. 
+                    Esto ayudará a prevenir el sobrecalentamiento y mejorar el flujo de aire, evitando 
+                    posibles daños en el hardware.</br>
+                    
+                    <br>-Actualización de software: Verificaremos que su sistema operativo y sus programas 
+                    estén actualizados con las últimas versiones y parches de seguridad. Esto mejorará el 
+                    rendimiento general de su computadora y garantizará la protección contra amenazas 
+                    cibernéticas.</br>
+                    
+                    <br>-Optimización del sistema: Realizaremos ajustes y configuraciones en su sistema operativo 
+                    para optimizar su rendimiento. Esto incluye la desfragmentación del disco duro, la eliminación 
+                    de archivos temporales y la optimización de la memoria RAM.</br>
+                    
+                    <br>-Verificación de hardware: Realizaremos pruebas exhaustivas en los componentes de hardware 
+                    de su computadora, como la memoria RAM, el disco duro y la tarjeta gráfica. Esto nos permitirá
+                     detectar posibles fallas o problemas de compatibilidad y tomar medidas correctivas.</br>
+                    
+                    <br>-Respaldo de datos: Recomendamos realizar copias de seguridad regulares de sus datos 
+                    importantes. En caso de que ocurra algún problema grave en su computadora, podremos restaurar 
+                    sus archivos y configuraciones previas.</br>
+                    
+                    Nuestro objetivo principal es asegurarnos de que su computadora funcione de manera eficiente, 
+                    confiable y segura. Con nuestro servicio de mantenimiento, prolongará la vida útil de su 
+                    equipo, evitará costosas reparaciones y disfrutará de un rendimiento óptimo en sus tareas 
+                    diarias.</p>
+            </div>
+        </div>
+        <div class="right-section">
+            <form class="form" action="/ruta_destino" method="POST">
+                <h2 class="form-title">Comunícate con Nosotros</h2>
+                <p class="form-description">Llena los siguientes espacios y nos pondremos en contacto contigo.</p>
+                <input type="text" name="nombre" placeholder="Nombre" class="form-input" required>
+                <input type="text" name="apellido1" placeholder="Apellido 1" class="form-input" required>
+                <input type="text" name="apellido2" placeholder="Apellido 2" class="form-input" required>
+                <input type="tel" name="telefono" placeholder="Teléfono" class="form-input" required>
+                <input type="email" name="correo" placeholder="Correo electrónico" class="form-input" required>
+                <button type="submit" class="form-button">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/roman.ferrusquia"><img src="../static/logo1.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/roman_ferrusquia/"><img src="../static/logo2.png" alt="Instagram"></a>
+        <a href="https://www.youtube.com/@MarkitosTOYS"><img src="../static/logo3.png" alt="Youtube"></a>
+    </div> 
+</body>
+</html>
