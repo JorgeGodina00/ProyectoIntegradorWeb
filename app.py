@@ -5,7 +5,7 @@ app = Flask(__name__)
 app.config['MYSQL_HOST']="localhost"
 app.config['MYSQL_USER']="root"
 app.config['MYSQL_PASSWWORD']=""
-app.config['MYSQL_DB']=""
+app.config['MYSQL_DB']="bd_integrador"
 
 app.secret_key='mysecretkey'
 mysql = MySQL(app)
@@ -14,10 +14,6 @@ mysql = MySQL(app)
 @app.route('/')
 def index():
     return render_template ('index.html')
-
-app.route("/service")
-def servicios():
-    return render_template ('nuevoservicio.html')
    
 @app.route("/historia")
 def historia():
@@ -26,6 +22,10 @@ def historia():
 @app.route("/soporte")
 def mantenimiento():
     return render_template('soporte.html')
+
+@app.route("/servicios")
+def servicios():
+    return render_template("nuevoservicio.html")
 
 @app.route("/ajustes")
 def ajustes():
