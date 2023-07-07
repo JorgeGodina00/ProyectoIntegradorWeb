@@ -75,36 +75,36 @@
         <center>
             <div class="container2">
                 <header>Registrar Nuevo Servicio</header>
-                <form action="#">
-                    <div class="form">
+                <form action="/guardarservicio">
+                    
                             <div class="fields">
                                 <div class="input-field">
                                     <label>Id del Cliente</label>
-                                    <input type="text" placeholder="Ingresar ID del cliente" required>
+                                    <input type="text" placeholder="Ingresar ID del cliente" name="txtid_cliente">
                                 </div>
                                 <div class="input-field">
-                                    <label>Fecha de Servicio</label>
-                                    <input type="date" placeholder="Ingresar la Fecha" required>
+                                    <label>Cve_serv</label>
+                                    <input type="text" placeholder="Ingresar " name="txtcsv">
                                 </div>
                                 <div class="input-field">
-                                    <label>Email Cliente</label>
-                                    <input type="text" placeholder="Ingresar el Correo" required>
+                                    <label>Costo</label>
+                                    <input type="number" placeholder="Ingresar el Costo" name="txtcosto">
                                 </div>
                                 <div class="input-field">
                                     <label>Numero Telefonico</label>
-                                    <input type="number" placeholder="Ingresar el Numero de Telefono" required>
+                                    <input type="text" placeholder="Ingresar el Numero de Telefono" name="txttel">
                                 </div>
                                 <div class="input-field">
                                     <label>Fecha del Servicio</label>
-                                    <input type="date" placeholder="Ingresar la Fecha del Servicio" required>
+                                    <input type="date" placeholder="Ingresar la Fecha del Servicio" name="txtfecha">
                                 </div>
                                 <div class="input-field">
-                                    <label>FCosto</label>
-                                    <input type="number" placeholder="Ingresar el Costo" required>
+                                    <label>Correo</label>
+                                    <input type="text" placeholder="Ingresar el Costo" name="txtcorreo">
                                 </div>
                             </div>
                         </div> 
-                    </div>
+                    
                     <div class="button">
                         <input type="submit" value="Registrar">
                 </form>
