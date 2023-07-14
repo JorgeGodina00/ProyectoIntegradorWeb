@@ -15,6 +15,10 @@ mysql = MySQL(app)
 @app.route('/')
 def index():
     return render_template ('index.html')
+
+@app.route('/inicia_sesion')
+def login():
+    return render_template('login.html')
    
 @app.route("/historia")
 def historia():
@@ -26,7 +30,7 @@ def mantenimiento():
 
 @app.route("/servicios")
 def servicios():
-    return render_template("nuevoservicio.html")
+    return render_template("servicios.html")
 
 @app.route("/ajustes")
 def ajustes():
@@ -59,6 +63,10 @@ def editar(id):
     curEditar.execute('Select * from  Where id= %s ', (id,))
     consulId= curEditar.fetchone()
     return render_template('editarfruta.html',fruta= consulId)
+
+@app.route('/contacto')
+def contacto():
+    return render_template('contacto.html')
 
 if __name__ == '__main__':
     app.run(debug= True, port= 5900)
