@@ -1,9 +1,198 @@
-{% extends './layout.html' %}
+{% extends 'template.html' %}
 
 {% block title %}{{index}}{% endblock %}
+
       
-
 {% block body %}
+    <section class="hero__container container">
+        <h1 class="hero__title">Buscaremos darle solucion a tus dudas tecnologicas</h1>
+        <p class="hero__paragraph">¡Aprovecha ahora y obtendras una promocion!</p>
+        <a href="/servicio" class="cta">Solicita Ahora</a>
+    </section>
+</header>
 
+<main>
+    <section class="container about">
+        <h2 class="subtitle">¿Qué servicios ofrecemos?</h2>
+        <p class="about__paragraph"></p>
+
+        <div class="about__main">
+            <article class="about__icons">
+                <img src="./images/shapes.svg" class="about__icon">
+                <h3 class="about__title">Atencion a Dudas</h3>
+                <p class="about__paragrah">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae tempore
+                    porro eius facilis?</p>
+            </article>
+
+            <article class="about__icons">
+                <img src="./images/paint.svg" class="about__icon">
+                <h3 class="about__title">A equipos de Computo Personales</h3>
+                <p class="about__paragrah">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae tempore
+                    porro eius facilis?</p>
+            </article>
+
+            <article class="about__icons">
+                <img src="/images/iconscode" class="about__icon">
+                <h3 class="about__title">A dudas de Desarrollo Web</h3>
+                <p class="about__paragrah">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae tempore
+                    porro eius facilis?</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="price container">
+        <h2 class="subtitle">Consulta nuetros planes de Servicio</h2>
+
+        <div class="price__table">
+            <div class="price__element">
+                <p class="price__name">Dudas Basicas</p>
+                <h3 class="price__price">¡Gratis!</h3>
+
+                <div class="price__items">
+                    <p class="price__features">#</p>
+                    <p class="price__features">#</p>
+                    <p class="price__features">#</p>
+                </div>
+
+                <a href="#" class="price__cta">Empieza ahora</a>
+            </div>
+
+
+            <div class="price__element price__element--best">
+                <p class="price__name">Paquete de Atencion Medio</p>
+                <h3 class="price__price">$5/mes</h3>
+
+                <div class="price__items">
+                    <p class="price__features">#</p>
+                    <p class="price__features">#</p>
+                    <p class="price__features">#</p>
+                </div>
+
+                <a href="#" class="price__cta">Empieza ahora</a>
+            </div>
+
+
+            <div class="price__element">
+                <p class="price__name">Paquete de Atencion Full</p>
+                <h3 class="price__price">$10/mes</h3>
+
+                <div class="price__items">
+                    <p class="price__features">$</p>
+                    <p class="price__features">$</p>
+                    <p class="price__features">$</p>
+                </div>
+
+                <a href="/servicio" class="price__cta">Empieza ahora</a>
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <section class="questions container">
+        <h2 class="subtitle">Preguntas frecuentes</h2>
+        <p class="questions__paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, porro
+            doloribus neque perspiciatis sapiente fuga.</p>
+
+        <section class="questions__container">
+            <article class="questions__padding">
+                <div class="questions__answer">
+                    <h3 class="questions__title">¿Qué tipo de dudas atendemos?
+                        <span class="questions__arrow">
+                            <img src="./images/arrow.svg" class="questions__img">
+                        </span>
+                    </h3>
+
+                    <p class="questions__show">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+                        facere, quidem eum id excepturi assumenda explicabo nam accusamus veritatis voluptates
+                        eveniet adipisci, dicta nihil nemo modi possimus officiis quam atque? Lorem ipsum, dolor sit
+                        amet consectetur adipisicing elit. Quos facere, quidem eum id excepturi assumenda explicabo
+                        nam accusamus veritatis voluptates eveniet adipisci, dicta nihil nemo modi possimus officiis
+                        quam atque?</p>
+                </div>
+            </article>
+
+            <article class="questions__padding">
+                <div class="questions__answer">
+                    <h3 class="questions__title">¿Qué tipo de servicio brindan?
+                        <span class="questions__arrow">
+                            <img src="./images/arrow.svg" class="questions__img">
+                        </span>
+                    </h3>
+
+                    <p class="questions__show">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+                        facere, quidem eum id excepturi assumenda explicabo nam accusamus veritatis voluptates
+                        eveniet adipisci, dicta nihil nemo modi possimus officiis quam atque? Lorem ipsum, dolor sit
+                        amet consectetur adipisicing elit. Quos facere, quidem eum id excepturi assumenda explicabo
+                        nam accusamus veritatis voluptates eveniet adipisci, dicta nihil nemo modi possimus officiis
+                        quam atque?</p>
+                </div>
+            </article>
+
+            <article class="questions__padding">
+                <div class="questions__answer">
+                    <h3 class="questions__title">¿Por qué precios tan bajos?
+                        <span class="questions__arrow">
+                            <img src="./images/arrow.svg" class="questions__img">
+                        </span>
+                    </h3>
+
+                    <p class="questions__show">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+                        facere, quidem eum id excepturi assumenda explicabo nam accusamus veritatis voluptates
+                        eveniet adipisci, dicta nihil nemo modi possimus officiis quam atque? Lorem ipsum, dolor sit
+                        amet consectetur adipisicing elit. Quos facere, quidem eum id excepturi assumenda explicabo
+                        nam accusamus veritatis voluptates eveniet adipisci, dicta nihil nemo modi possimus officiis
+                        quam atque?</p>
+                </div>
+            </article>
+        </section>
+
+</main>
+
+<footer class="footer">
+    <section class="footer__container container">
+        <nav class="nav nav--footer">
+            <h2 class="footer__title">Friendly Solutions</h2>
+
+            <ul class="nav__link nav__link--footer">
+                <li class="nav__items">
+                    <a href="/" class="nav__links">Inicio</a>
+                </li>
+                <li class="nav__items">
+                    <a href="/acerca" class="nav__links">Acerca de</a>
+                </li>
+                <li class="nav__items">
+                    <a href="https://api.whatsapp.com/send?phone=4423159281" class="nav__links">Contacto</a>
+                </li>
+                <li class="nav__items">
+                    <a href="/blog" class="nav__links">Blog</a>
+                </li>
+            </ul>
+        </nav>
+
+        <form class="footer__form" action="https://formspree.io/f/mknkkrkj" method="POST">
+            <h2 class="footer__newsletter">Suscribete a la newsletter</h2>
+            <div class="footer__inputs">
+                <input type="email" placeholder="Email:" class="footer__input" name="_replyto">
+                <input type="submit" value="Registrate" class="footer__submit">
+            </div>
+        </form>
+    </section>
+
+    <section class="footer__copy container">
+
+        <h3 class="footer__copyright">Derechos reservados &copy; Friendly Solutions Incorporated</h3>
+    </section>
+</footer>
+
+
+
+
+
+
+    <script src="/static/js/slider.js"></script>
+    <script src="/static/js/questions.js"></script>
+    <script src="/static/js/menu.js"></script>  
 {% endblock %}
 
