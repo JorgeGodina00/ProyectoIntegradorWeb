@@ -97,6 +97,62 @@
             height: 30px;
             width: auto;
         }
+        .servicios-title {
+            text-align: center;
+            margin-bottom: 20px;
+          }
+          .btn-whatsapp {
+            position: relative;
+            display: inline-block; 
+        }
+        
+        .btn-whatsapp:before,
+        .btn-whatsapp:after {
+            content: "";
+            position: absolute;
+            top: 2px;
+            left: 4px;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background-color: #00e676;
+            opacity: 0;
+            z-index: -1; 
+            animation: ondas 1.7s infinite;
+        }
+        
+        .btn-whatsapp:before {
+            animation-delay: 1s;
+        }
+        
+        .btn-whatsapp:after {
+            animation-delay: 1.4s;
+        }
+        
+        .btn-whatsapp img {
+            position: relative;
+            z-index: 2;
+        }
+        
+        @keyframes ondas {
+            0% {
+                transform: scale(1);
+                opacity: 0.6; /* Ajustar la opacidad inicial para que sea un poco visible */
+            }
+            15% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+                transform: scale(2.5);
+            }
+        }
+        .btn-whatsapp {
+            position: fixed; 
+            bottom: 20px;
+            right: 20px; 
+            display: inline-block;
+        }
     </style>
 </head>
 <body>
@@ -106,6 +162,11 @@
         <a href="https://api.whatsapp.com/send?phone=4423159281">Contacto</a>
         <a href="../templates/historia.html">Historia</a>
     </div>
+    <div class="servicios-title">
+        <h1>Servicios</h1>
+        <div class="linea"></div>
+        <p>Te mostramos algunos de los servicios que ofrecemos.</p>
+      </div>
     <div class="container">
         <div class="card">
             <img src="../static/desarrollow.png" alt="Programación Web">
@@ -190,5 +251,8 @@
             <a href="https://www.youtube.com/@MarkitosTOYS"><img src="../static/logo3.png" alt="Youtube"></a>
         </div>  
     </div>
+    <a href="https://wa.me/4423159281" class="btn-whatsapp">
+        <img src="icon-whatsapp.svg" alt="Contactar por WhatsApp">
+    </a>
 </body>
 </html>
