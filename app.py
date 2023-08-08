@@ -40,14 +40,14 @@ def blog():
 @app.route('/infocliente', methods=['POST'])
 def newmedico():
     if request.method == 'POST':
-        Vnombre= request.form['nametxt']
-        Vapellidop= request.form['aptxt']
-        Vapellidom= request.form['amtxt']
-        Vtelefono= request.form['teltxt']
-        Vemail= request.form['emailtxt']
-        Vdesc= request.form['desctxt']   
+        VNombre= request.form['nametxt']
+        VApellido1= request.form['aptxt']
+        VApellido2= request.form['amtxt']
+        VTelefono= request.form['teltxt']
+        VEmail= request.form['emailtxt']
+        VDesc= request.form['desctxt']   
         CS = mysql.connection.cursor() 
-        CS.execute("INSERT INTO formulario1 (Nombre, Apellido1, Apellido2, Email, Telefono, Descripcion) VALUES (%s, %s, %s, %s, %s, %s)", (Vnombre, Vapellidop, Vapellidom, Vtelefono, Vemail, Vdesc))
+        CS.execute("INSERT INTO formulario1 (Nombre, Apellido1, Apellido2, Telefono, Email, Descripcion) VALUES (%s, %s, %s, %s, %s, %s)", (VNombre, VApellido1, VApellido2, VTelefono, VEmail, VDesc))
         mysql.connection.commit()
     flash('Se ha hecho el registro correctamente')    
     return redirect(url_for('index'))
