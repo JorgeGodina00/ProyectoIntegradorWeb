@@ -48,30 +48,29 @@
             <p class="hero__paragraph">Soluciones Amigables a sus Problemas Tecnicos</p>
         </section>
     </header>
-
     <body>
         <button class="chatbot-toggler">
-            <span class="material-symbols-outlined">mode_comment</span>
-            <span class="material-symbols-outlined">close</span>
-         </button>
-         <div class="chatbot">
-             <header>
-                 <h2>TecnicBot</h2> 
-                 <span class="close-btn material-symbols-outlined">close</span>
-             </header>
-             <ul class="chatbox">
-                 <li class="chat incoming">
-                     <span class="material-symbols-outlined">smart_toy</span>
-                     <p>Hola, <br>¿En que puedo ayudarte?</p>
-                 </li>
-             </ul>
-             <div class="chat-input">
-                 <textarea placeholder="Ingresa un mensaje..." required></textarea>
-                 <span id="send-btn" class="material-symbols-outlined">send</span>
-             </div>
-         </div>
-        
-    </body>
+          <span class="material-symbols-rounded">mode_comment</span>
+          <span class="material-symbols-outlined">close</span>
+        </button>
+        <div class="chatbot">
+          <header>
+            <h2>Chatbot</h2>
+            <span class="close-btn material-symbols-outlined">close</span>
+          </header>
+          <ul class="chatbox">
+            <li class="chat incoming">
+              <span class="material-symbols-outlined">smart_toy</span>
+              <p>Hola<br>¿En que puedo ayudarte hoy?</p>
+            </li>
+          </ul>
+          <div class="chat-input">
+            <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+            <span id="send-btn" class="material-symbols-rounded">send</span>
+          </div>
+        </div>
+    
+      </body>
     
        
     {% block body %}

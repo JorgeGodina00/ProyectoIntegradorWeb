@@ -5,7 +5,7 @@ const chatInput = document.querySelector(".chat-input textarea");
 const sendChatBtn = document.querySelector(".chat-input span");
 
 let userMessage = null; // 
-const API_KEY = "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";
+const API_KEY = "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";
 const inputInitHeight = chatInput.scrollHeight;
 
 const createChatLi = (message, className) => {
@@ -40,7 +40,7 @@ const generateResponse = (chatElement) => {
         messageElement.textContent = data.choices[0].message.content.trim();
     }).catch(() => {
         messageElement.classList.add("error");
-        messageElement.textContent = "Oops! Something went wrong. Please try again.";
+        messageElement.textContent = "Oops! Algo salio mal. Por favor, intenta de nuevo.";
     }).finally(() => chatbox.scrollTo(0, chatbox.scrollHeight));
 }
 
@@ -58,7 +58,7 @@ const handleChat = () => {
     
     setTimeout(() => {
         // 
-        const incomingChatLi = createChatLi("Thinking...", "incoming");
+        const incomingChatLi = createChatLi("Pensando...", "incoming");
         chatbox.appendChild(incomingChatLi);
         chatbox.scrollTo(0, chatbox.scrollHeight);
         generateResponse(incomingChatLi);
