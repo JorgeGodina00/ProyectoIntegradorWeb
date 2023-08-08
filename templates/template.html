@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Friendly solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/solutions.png') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
     <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css') }}">
+
+    <script src="static/js/script.js" defer></script>
 </head>
 <body>
     <header class="hero">
@@ -45,6 +48,32 @@
         </section>
     </header>
 
+    <body>
+        <button class="chatbot-toggler">
+            <span class="material-symbols-outlined">mode_comment</span>
+            <span class="material-symbols-outlined">close</span>
+         </button>
+         <div class="chatbot">
+             <header>
+                 <h2>TecnicBot</h2> 
+             </header>
+             <ul class="chatbox">
+                 <li class="chat incoming">
+                     <span class="material-symbols-outlined">smart_toy</span>
+                     <p>Hola, <br>¿En que puedo ayudarte?</p>
+                 </li>
+                 <li class="chat outgoing">
+                     <p>blabla</p>
+                 </li>
+             </ul>
+             <div class="chat-input">
+                 <textarea placeholder="Ingresa un mensaje..." required></textarea>
+                 <span id="send-btn" class="material-symbols-outlined">send</span>
+             </div>
+         </div>
+        
+    </body>
+    
        
     {% block body %}
       
