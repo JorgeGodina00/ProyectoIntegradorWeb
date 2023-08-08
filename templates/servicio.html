@@ -1,8 +1,58 @@
 {% extends 'template.html' %}
 
-{% block title %}{{index}}{% endblock %}
+{% block title %}
+    {{ index }}
+{% endblock %}
 
-      
 {% block body %}
+
+<div class="container mt-4">
+    <center><h1>Solicita alguno de nuestros servicios de Soporte Técnico</h1></center>
+
+    <div class="row mt-4">
+        <div class="col-md-6 offset-md-3 bg-light p-4">
+            <h2 class="display-7">Envianos tu información para ponernos en contacto</h2>
+            <form action="/infoclientes" method="POST" id="solicitud-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" name="nametxt" placeholder="Ingrese su nombre">
+                </div>
+                <div class="form-group">
+                    <label for="apellido-paterno">Apellido Paterno</label>
+                    <input type="text" class="form-control" name="aptxt" placeholder="Ingrese su apellido paterno">
+                </div>
+                <div class="form-group">
+                    <label for="apellido-materno">Apellido Materno</label>
+                    <input type="text" class="form-control" name="amtxt" placeholder="Ingrese su apellido materno">
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" class="form-control" name="teltxt" placeholder="Ingrese su teléfono">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" name="emailtxt" placeholder="Ingrese su email">
+                </div>
+                <div class="form-group">
+                    <label for="descripcion">Descripción</label>
+                    <textarea class="form-control" name="desctxt" rows="3" placeholder="Ingrese una descripción del servcio que desea adquirir"></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">
+                    <span class="bi bi-envelope"></span> Enviar Solicitud
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById('solicitud-form').addEventListener('submit', function(e) {
+        var confirmation = confirm('¿Estás seguro de que tus datos son correctos?');
+        if (!confirmation) {
+            e.preventDefault();
+        }
+    });
+</script>
 
 {% endblock %}
